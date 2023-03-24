@@ -1,0 +1,799 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* .....................header side.............. */
+.header {
+  height: 86px;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  margin-bottom: 5px;
+  position: sticky;
+  top: 0;
+  border: 2px solid #909b90;
+  z-index: 1;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-left: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.middle {
+  margin-right: 30px;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+  height: 45px;
+  font-size: 15px;
+  border: 1px solid rgb(190, 189, 189);
+  border-radius: 3px;
+  position: fixed;
+  margin-left: 0px;
+}
+.search-bar::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+.search-btn {
+  height: 47px;
+  width: 45px;
+  border: 1px solid rgb(190, 189, 189);
+  border-radius: 3px;
+  background-color: whitesmoke;
+  margin-left: 193px;
+  cursor: pointer;
+}
+
+.search-box {
+  height: 20px;
+  border-radius: 2px;
+}
+
+.search-bar:hover {
+  background-color: rgb(226, 217, 219);
+  color: rgb(179 17 44);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 12px;
+  font-size: large;
+}
+
+.right {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  position: static;
+}
+.right img {
+  height: 20px;
+}
+
+#home {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#menu {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#nearby-stores {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#kfc-deals {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#cart {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#login {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#home:hover {
+  color: rgb(179 17 44);
+}
+
+#menu:hover {
+  color: rgb(179 17 44);
+}
+
+#nearby-stores:hover {
+  color: rgb(179 17 44);
+}
+#kfc-deals:hover {
+  color: rgb(179 17 44);
+}
+#cart:hover {
+  color: rgb(179 17 44);
+}
+#login:hover {
+  color: rgb(179 17 44);
+}
+
+/* .....................body side......................... */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* slider side */
+#slider {
+  overflow: hidden;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img {
+  float: left;
+  width: 20%;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+/* BROWSE CATEGORIES side */
+
+#menu-container {
+  display: inline-block;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.browseCategory-heading {
+  color: #8a1216;
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  margin-left: 35%;
+}
+.menu-box {
+  height: 240px;
+  width: 21.1%;
+  margin-left: 3.5%;
+  margin-top: 3%;
+  float: left;
+  box-shadow: 10px 5px 30px lightblue;
+  background-color: rgba(230, 217, 217, 0.411);
+  border-radius: 20px;
+}
+
+.menu-box:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 8px 20px lightgray;
+}
+.menubox1 img {
+  height: 190px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.menubox2 {
+  font-size: 13px;
+  padding-top: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Merienda", cursive;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.menubox2:hover {
+  color: #8a1216;
+  font-size: 15px;
+}
+/* offer side */
+
+#offer-container {
+  display: inline-block;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.offfer-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer-heading1 {
+  color: #8a1216;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 30px;
+}
+.offer-heading2 {
+  font-size: 21px;
+ 
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+.offer-box {
+  height: 340px;
+  width: 21.1%;
+  margin-left: 3.5%;
+  margin-top: 3%;
+  float: left;
+  box-shadow: 10px 10px 30px rgb(197, 201, 202);
+  background-color: whitesmoke;
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.offerBox1 img {
+  height: 200px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.offerBox2 {
+  font-size: 12px;
+  padding-top: 6px;
+  padding-left: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Merienda", cursive;
+}
+.valid {
+  font-size: 15px;
+  padding-top: 3%;
+  padding-left: 30px;
+}
+
+/* ...................footer side................. */
+
+.footer-container {
+  height: 250px;
+  border: 3px solid rgb(15, 15, 15);
+}
+
+.footer {
+  height: 175px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.footer-logo {
+  height: 210px;
+  width: 100px;
+}
+.footer-logo img {
+  height: 70px;
+  width: 160px;
+  padding-top: 30px;
+}
+.KFC-Food {
+  height: 165px;
+  width: 160px;
+  padding-top: 30px;
+  list-style-type: none;
+  padding-left: 20px;
+  line-height: 27px;
+}
+
+.kfcfood-list {
+  list-style-type: none;
+}
+.kfcfood-items {
+  text-decoration: none;
+}
+.Support {
+  height: 165px;
+  width: 160px;
+  padding-top: 30px;
+  line-height: 27px;
+}
+.support-list {
+  list-style-type: none;
+}
+
+.Legal {
+  height: 165px;
+  width: 160px;
+  padding-top: 30px;
+  line-height: 27px;
+}
+.legal-list {
+  list-style-type: none;
+}
+.KFC-India {
+  height: 165px;
+  width: 160px;
+  padding-top: 30px;
+  line-height: 27px;
+}
+.kfc-india-list {
+  list-style-type: none;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(179 17 44);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.applink {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.playstore img {
+  height: 160px;
+  width: 150px;
+}
+.appstore img {
+  height: 57px;
+  width: 160px;
+  padding-right: 10px;
+}
+
+.copyrights {
+  height: 20px;
+  width: 100%;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+}
+/* .........................screen size................ */
+
+@media screen and (max-width: 1270px) {
+  .middle {
+    position: absolute;
+    visibility: hidden;
+  }
+  .menubox2:hover {
+    font-size: 12px;
+    height: 40px;
+    color: black;
+  }
+  .offer-box {
+    overflow: scroll;
+  }
+  .offer-box::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 980px) {
+  .header {
+    background-color: lightgray;
+  }
+  .right img {
+    position: absolute;
+    visibility: hidden;
+  }
+  .menubox2 {
+    font-size: 12px;
+    height: 40px;
+    color: black;
+  }
+  .menubox2:hover {
+    font-size: 12px;
+    height: 40px;
+    color: black;
+  }
+  .offer-box {
+    overflow: scroll;
+  }
+  .offer-box::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .header {
+    height: 130px;
+    
+  }
+  .left {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+  }
+  .right {
+    height: 60px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+  }
+  #offer-container {
+    visibility: hidden;
+    position: absolute;
+  }
+  .footer-logo {
+    visibility: hidden;
+  }
+  .menubox2 {
+    font-size: 10px;
+    height: 40px;
+    color: black;
+  }
+  .menubox2:hover {
+    font-size: 10px;
+    height: 40px;
+    color: black;
+  }
+}
+@media screen and (max-width: 650px) {
+  #home,
+  #menu,
+  #nearby-stores,
+  #kfc-deals,
+  #cart,
+  #login {
+    font-size: 15px;
+  }
+  .browseCategory-heading {
+    font-size: 35px;
+    margin-left: 0;
+  }
+  .menubox1 img {
+    height: 80px;
+  }
+  .menu-box {
+    height: 100px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: none;
+  }
+  .menu-box:hover {
+    box-shadow: none;
+  }
+  .menubox1 img {
+    height: 80px;
+    width: 50px;
+  }
+  .menubox2 {
+    font-size: 10px;
+    height: 40px;
+    color: black;
+  }
+  .menubox2:hover {
+    font-size: 10px;
+    height: 40px;
+    color: black;
+  }
+  #offer-container {
+    visibility: hidden;
+    position: absolute;
+  }
+  .footer-container {
+    height: 330px;
+  }
+  .footer-logo {
+    visibility: hidden;
+  }
+  .applink {
+    margin-top: 55px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #home,
+  #menu,
+  #nearby-stores,
+  #kfc-deals,
+  #cart,
+  #login {
+    font-size: 13px;
+  }
+  .browseCategory-heading {
+    font-size: 30px;
+    margin-left: 0;
+  }
+  .menubox1 img {
+    height: 80px;
+  }
+  .menu-box {
+    height: 110px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: none;
+  }
+  .menu-box:hover {
+    box-shadow: none;
+  }
+  .menubox1 img {
+    height: 80px;
+    width: 50px;
+  }
+  .menubox2 {
+    font-size: 10px;
+    height: 40px;
+    color: black;
+  }
+  .menubox2:hover {
+    font-size: 10px;
+    height: 40px;
+    color: black;
+  }
+  #offer-container {
+    visibility: hidden;
+    position: absolute;
+  }
+  .footer-container {
+    height: 330px;
+  }
+  .footer-logo {
+    visibility: hidden;
+  }
+  .applink {
+    margin-top: 55px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #home,
+  #menu,
+  #nearby-stores,
+  #kfc-deals,
+  #cart,
+  #login {
+    font-size: 11px;
+  }
+  .browseCategory-heading {
+    font-size: 25px;
+    margin-left: 0;
+  }
+  .menubox1 img {
+    height: 80px;
+  }
+  .menu-box {
+    height: 110px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: none;
+  }
+  .menu-box:hover {
+    box-shadow: none;
+  }
+  .menubox1 img {
+    height: 80px;
+    width: 50px;
+  }
+  .menubox2 {
+    font-size: 10px;
+    height: 40px;
+    color: black;
+  }
+  .menubox2:hover {
+    font-size: 10px;
+    height: 40px;
+    color: black;
+  }
+  #offer-container {
+    visibility: hidden;
+    position: absolute;
+  }
+  .footer-container {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 360px) {
+  #home,
+  #menu,
+  #nearby-stores,
+  #kfc-deals,
+  #cart,
+  #login {
+    font-size: 9px;
+  }
+  .browseCategory-heading {
+    font-size: 20px;
+    margin-left: 0;
+  }
+  .menubox1 img {
+    height: 80px;
+  }
+  .menu-box {
+    height: 110px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: none;
+  }
+  .menu-box:hover {
+    box-shadow: none;
+  }
+  .menubox1 img {
+    height: 80px;
+    width: 50px;
+  }
+  .menubox2 {
+    font-size: 10px;
+    height: 40px;
+    color: black;
+  }
+  .menubox2:hover {
+    font-size: 10px;
+    height: 40px;
+    color: black;
+  }
+  #offer-container {
+    visibility: hidden;
+    position: absolute;
+  }
+  .footer-container {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 270px) {
+  .header {
+    height: 200px;
+  }
+
+  .logo {
+    height: 55px;
+    width: 100px;
+  }
+  #home,
+  #menu,
+  #nearby-stores,
+  #kfc-deals,
+  #cart,
+  #login {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .right {
+    display: inline-block;
+    height: 120px;
+  }
+
+  .browseCategory-heading {
+    font-size: 17px;
+    margin-left: 0;
+  }
+
+  .menu-box {
+    height: 110px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: none;
+  }
+  .menu-box:hover {
+    box-shadow: none;
+  }
+  .menubox1 img {
+    height: 80px;
+    width: 50px;
+  }
+  .menubox2 {
+    font-size: 10px;
+    height: 40px;
+    color: black;
+  }
+  .menubox2:hover {
+    font-size: 10px;
+    height: 40px;
+    color: black;
+  }
+  #offer-container {
+    visibility: hidden;
+    position: absolute;
+  }
+  .footer-container {
+    visibility: hidden;
+    position: absolute;
+  }
+}
