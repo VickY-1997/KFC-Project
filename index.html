@@ -2,260 +2,645 @@
 <html lang="en">
   <head>
     <title>KFC</title>
-    <link rel="stylesheet" href="style.css" />
     <link href="images/icons and logo/kfc-title-icon.png" rel="icon" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Trade+Winds&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="javascript.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap");
-    </style>
+    <!--Fontawsome-->
+  <script src="https://kit.fontawesome.com/6606e36ae0.js" crossorigin="anonymous"></script>
+  <script>
+    window.onload = () => {
+      document.querySelector('#coupon').style.display = 'flex';
+
+    };
+  </script>
+
+
   </head>
   <body>
-    <div class="header">
-      <div class="left">
-        <img
-          class="logo"
-          src="images/icons and logo/KFC-logo.png"
-          alt="logo"
-          height="70"
-          width="200"
-        />
+
+    <!-- .........................coupon code........... -->
+
+    <div id="coupon">
+      <div class="couponcode">
+        <div class="popupcontent">
+          <img id="PopupImage" src="couponimg.png">
+          <span id="popupClose"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+  
       </div>
-      <div class="middle">
-        <input class="search-bar" type="text" placeholder="search" />
-        <button class="search-btn">
-          <img
-            class="search-box"
-            src="images/icons and logo/search-icon.png"
-            alt="search-icon"
-          />
+    </div>
+
+
+   <!-- ...................................header navbars....................... -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top sticky">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="images/icons and logo/KFC-logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img src="images/icons and logo/home.gif" alt="home" /> HOME</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                ><img src="images/icons and logo/menu.gif" alt="menu" /> MENU</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">BEVERAGES & DESSERTS</a>
+                </li>
+                <li><a class="dropdown-item" href="#">BOX MEALS</a></li>
+                <li><a class="dropdown-item" href="#">BRIYANI BUCKETS</a></li>
+                <li><a class="dropdown-item" href="#">BURGER</a></li>
+                <li><a class="dropdown-item" href="#">CHICKEN BUCKETS</a></li>
+                <li><a class="dropdown-item" href="#">HOT LAUNCHES</a></li>
+                <li><a class="dropdown-item" href="#">SNACKS</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">VALUE LUNCH SPECIALS</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><img src="images/icons and logo/location.gif" alt="location" />
+                NEARBY STORES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="images/icons and logo/discount.gif" alt="offer" />
+                KFC-DEALS</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="images/icons and logo/cart.gif" alt="cart" /> CART</a
+              >
+            </li>
+          </ul>
+
+          <button onclick="myFunction()" class="darkmode">Dark mode</button>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item signup">
+              <a class="nav-link" href="#">
+                <img
+                  src="images/icons and logo/signup.gif"
+                  alt="signup"
+                  class="imgsignup"
+                />SIGNUP
+              </a>
+            </li>
+
+            <li class="nav-item login">
+              <a class="nav-link" href="#">
+                <img
+                  src="images/icons and logo/login.gif"
+                  alt="login"
+                  class="imglogin"
+                />LOGIN
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="right">
-        <div id="home">
-          <img src="images/icons and logo/home.gif" alt="home" /> HOME
+    </nav>
+
+
+    <!-- .................................. Img slider........................... -->
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="4"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/slider/slide.webp"
+            alt="slider1"
+            class="d-block"
+            style="width: 100%"
+          />
         </div>
-        <div id="menu">
-          <img src="images/icons and logo/menu.gif" alt="menu" /> MENU
+        <div class="carousel-item">
+          <img
+            src="images/slider/slider 3 kfc briyani.webp"
+            alt="slider2"
+            class="d-block"
+            style="width: 100%"
+          />
         </div>
-        <div id="nearby-stores">
-          <img src="images/icons and logo/location.gif" alt="location" /> NEARBY
-          STORES
+        <div class="carousel-item">
+          <img
+            src="images/slider/wednesday offer.webp"
+            alt="slider3"
+            class="d-block"
+            style="width: 100%"
+          />
         </div>
-        <div id="kfc-deals">
-          <img src="images/icons and logo/discount.gif" alt="offer" /> KFC DEALS
+        <div class="carousel-item">
+          <img
+            src="images/slider/Chicken_Roll.webp"
+            alt="slider4"
+            class="d-block"
+            style="width: 100%"
+          />
         </div>
-        <div id="cart">
-          <img src="images/icons and logo/cart.gif" alt="cart" /> CART
+        <div class="carousel-item">
+          <img
+            src="images/slider/Peri_Peri_Match_Specials_Baner.webp"
+            alt="slider4"
+            class="d-block"
+            style="width: 100%"
+          />
         </div>
-        <div id="login">
-          <img src="images/icons and logo/login.gif" alt="login" /> LOGIN
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- ....................................browse category.................... -->
+
+    <div class="container">
+      <h1 class="browse-heading">BROWSE CATEGORIES</h1>
+
+      <div class="container">
+        <div class="row">
+          <div class="col col-sm-4 col-md-4 col-lg-3">
+            <a href="#">
+              <figure class="browse-img">
+                <img
+                  src="images/BROWSE CATEGORIES/BIRYANI BUCKETS.jpg"
+                  alt="biryani"
+                />
+                <figcaption class="browse-caption">BIRYANI BUCKETS</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col col-sm-4 col-md-4 col-lg-3">
+            <a href="#">
+              <figure class="browse-img">
+                <img src="images/BROWSE CATEGORIES/BOX MEALS.jpg" alt="meals" />
+                <figcaption class="browse-caption">BOX MEALS</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col col-sm-4 col-md-4 col-lg-3">
+            <a href="#">
+              <figure class="browse-img">
+                <img src="images/BROWSE CATEGORIES/BURGERS.jpg" alt="burger" />
+                <figcaption class="browse-caption">BURGER</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col col-sm-4 col-md-4 col-lg-3">
+            <a href="#">
+              <figure class="browse-img">
+                <img
+                  src="images/BROWSE CATEGORIES/CHICKEN BUCKETS.jpg"
+                  alt="chicken buckets"
+                />
+                <figcaption class="browse-caption">CHICKEN BUCKETS</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col col-sm-4 col-md-4 col-lg-3">
+            <a href="#">
+              <figure class="browse-img">
+                <img
+                  src="images/BROWSE CATEGORIES/CHICKEN ROLLS.jpg"
+                  alt="rolls"
+                />
+                <figcaption class="browse-caption">CHICKEN ROLLS</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col col-sm-4 col-md-4 col-lg-3">
+            <a href="#">
+              <figure class="browse-img">
+                <img
+                  src="images/BROWSE CATEGORIES/HOT DEALS.jpg"
+                  alt="hot deals"
+                />
+                <figcaption class="browse-caption">HOT DEALS</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col col-sm-4 col-md-4 col-lg-3">
+            <a href="#">
+              <figure class="browse-img">
+                <img
+                  src="images/BROWSE CATEGORIES/HOT LUNCHES.jpg"
+                  alt="hot launches"
+                />
+                <figcaption class="browse-caption">HOT LAUNCHES</figcaption>
+              </figure>
+            </a>
+          </div>
+          <div class="col col-sm-4 col-md-4 col-lg-3">
+            <a href="#">
+              <figure class="browse-img">
+                <img
+                  src="images/BROWSE CATEGORIES/View All Menu.svg"
+                  alt="allmenu"
+                />
+                <figcaption class="browse-caption">View All Menu</figcaption>
+              </figure>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div id="slider">
-      <figure>
-        <img src="images/slider/slide.webp" alt="Image 1" />
-        <img src="images/slider/slider 3 kfc briyani.webp" alt="Image 2" />
-        <img src="images/slider/wednesday offer.webp" alt="Image 3" />
-        <img
-          src="images/slider/Kentucky_Fried_Chicken_Nuggets.jpg"
-          alt="Image 2"
-        />
-        <img src="images/slider/wednesday offer.webp" alt="Image 3" />
-      </figure>
+
+    <!-- ..................................wednesday offers ............................ -->
+    <div class="container">
+      <h1 class="wednesday-heading">WEDNESDAY OFFER & DEALS</h1>
+    </div>
+    <div class="container-fluid wednesday">
+      <div class="slider">
+        <input type="radio" name="testimonial" id="t-1" />
+        <input type="radio" name="testimonial" id="t-2" />
+        <input type="radio" name="testimonial" id="t-3" />
+        <input type="radio" name="testimonial" id="t-4" />
+        <input type="radio" name="testimonial" id="t-5" checked />
+        <input type="radio" name="testimonial" id="t-6" />
+        <input type="radio" name="testimonial" id="t-7" />
+        <input type="radio" name="testimonial" id="t-8" />
+        <input type="radio" name="testimonial" id="t-9" />
+
+        <div class="testimonials">
+          <label class="item" for="t-1">
+            <h1 class="wed-img">
+              <figure>
+                <img
+                  src="images/wednesday offers  & deals/10 Peri Peri Leg Piece + 4 Dips.jpg"
+                  alt="peri"
+                />
+                <figcaption class="wed-caption">
+                  10 Peri Peri Leg Piece + 4 Dips
+                </figcaption>
+              </figure>
+            </h1>
+          </label>
+          <label class="item" for="t-2">
+            <h1 class="wed-img">
+              <figure>
+                <img
+                  src="images/wednesday offers  & deals/5+5 Bucket.jpg"
+                  alt="Bucket"
+                />
+                <figcaption class="wed-caption">5+5 Bucket</figcaption>
+              </figure>
+            </h1>
+          </label>
+          <label class="item" for="t-3">
+            <h1 class="wed-img">
+              <figure>
+                <img
+                  src="images/wednesday offers  & deals/Classic Chicken Biryani Bucket & Pepsi combo.jpg"
+                  alt="wed"
+                />
+                <figcaption class="wed-caption">
+                  Classic Chicken Biryani Bucket & Pepsi combo
+                </figcaption>
+              </figure>
+            </h1>
+          </label>
+          <label class="item" for="t-4">
+            <h1 class="wed-img">
+              <figure>
+                <img
+                  src="images/wednesday offers  & deals/Mingles Meal.jpg"
+                  alt="wed"
+                />
+                <figcaption class="wed-caption">Mingles Meal</figcaption>
+              </figure>
+            </h1>
+          </label>
+          <label class="item" for="t-5">
+            <h1 class="wed-img">
+              <figure>
+                <img
+                  src="images/wednesday offers  & deals/Popcorn Chicken Biryani Bucket & Pepsi combo.jpg"
+                  alt="wed"
+                />
+                <figcaption class="wed-caption">
+                  Popcorn Chicken Biryani Bucket & Pepsi combo
+                </figcaption>
+              </figure>
+            </h1>
+          </label>
+          <label class="item" for="t-6">
+            <h1 class="wed-img">
+              <figure>
+                <img
+                  src="images/wednesday offers  & deals/Wednesday Boneless Bucket Meal.jpg"
+                  alt="wed"
+                />
+                <figcaption class="wed-caption">
+                  Wednesday Boneless Bucket Meal
+                </figcaption>
+              </figure>
+            </h1>
+          </label>
+          <label class="item" for="t-7">
+            <h1 class="wed-img">
+              <figure>
+                <img
+                  src="images/wednesday offers  & deals/Wednesday Hot & Crispy Bucket Meal.jpg"
+                  alt="wed"
+                />
+                <figcaption class="wed-caption">
+                  Wednesday Hot & Crispy Bucket Meal
+                </figcaption>
+              </figure>
+            </h1>
+          </label>
+          <label class="item" for="t-8">
+            <h1 class="wed-img">
+              <figure>
+                <img
+                  src="images/wednesday offers  & deals/Wednesday special 10 pc Hot & Crispy.jpg"
+                  alt="wed"
+                />
+                <figcaption class="wed-caption">
+                  Wednesday special 10 pc Hot & Crispy
+                </figcaption>
+              </figure>
+            </h1>
+          </label>
+          <label class="item" for="t-9">
+            <h1 class="wed-img">
+              <figure>
+                <img
+                  src="images/wednesday offers  & deals/Wednesday Special 12 pc PeriPeri Strips & 4 dips.jpg"
+                  alt="wed"
+                />
+                <figcaption class="wed-caption">
+                  Wednesday Special 12 pc PeriPeri Strips & 4 dips
+                </figcaption>
+              </figure>
+            </h1>
+          </label>
+        </div>
+        <br />
+        <div class="dots">
+          <label for="t-1"></label>
+          <label for="t-2"></label>
+          <label for="t-3"></label>
+          <label for="t-4"></label>
+          <label for="t-5"></label>
+          <label for="t-6"></label>
+          <label for="t-7"></label>
+          <label for="t-8"></label>
+          <label for="t-9"></label>
+        </div>
+      </div>
     </div>
 
-    <div id="menu-container">
-      <span class="browseCategory-heading">BROWSE CATEGORIES</span>
-      <div class="mainbox">
-        <div class="menu-box">
-          <div class="menubox1">
-            <img
-              src="images/BROWSE CATEGORIES/BIRYANI BUCKETS.jpg"
-              alt="briyani"
-            />
-          </div>
-          <div class="menubox2">BIRYANI BUCKETS</div>
-        </div>
-        <div class="menu-box">
-          <div class="menubox1">
-            <img src="images/BROWSE CATEGORIES/BOX MEALS.jpg" alt="boxMeals" />
-          </div>
-          <div class="menubox2">BOX MEALS</div>
-        </div>
-        <div class="menu-box">
-          <div class="menubox1">
-            <img src="images/BROWSE CATEGORIES/BURGERS.jpg" alt="burgers" />
-          </div>
-          <div class="menubox2">BURGERS</div>
-        </div>
-        <div class="menu-box">
-          <div class="menubox1">
-            <img
-              src="images/BROWSE CATEGORIES/CHICKEN BUCKETS.jpg"
-              alt="chickenBuckets"
-            />
-          </div>
-          <div class="menubox2">CHICKEN BUCKETS</div>
-        </div>
-        <div class="menu-box">
-          <div class="menubox1">
-            <img src="images/BROWSE CATEGORIES/HOT DEALS.jpg" alt="hotDeals" />
-          </div>
-          <div class="menubox2">HOT DEALS</div>
-        </div>
-        <div class="menu-box">
-          <div class="menubox1">
-            <img
-              src="images/BROWSE CATEGORIES/HOT LUNCHES.jpg"
-              alt="hotLaunches"
-            />
-          </div>
-          <div class="menubox2">HOT LAUNCHES</div>
-        </div>
-        <div class="menu-box">
-          <div class="menubox1">
-            <img
-              src="images/BROWSE CATEGORIES/VALUE LUNCH SPECIALS.jpg"
-              alt="specialLunch"
-            />
-          </div>
-          <div class="menubox2">VALUE LUNCH SPECIALS</div>
-        </div>
-        <div class="menu-box">
-          <div class="menubox1">
-            <img
-              src="images/BROWSE CATEGORIES/View All Menu.svg"
-              alt="all menu"
-            />
-          </div>
-          <div class="menubox2">View All Menu &rarr;</div>
-        </div>
-      </div>
+    <!-- ......................................offer and deals.................................... -->
+
+    <div class="container offerheadig">
+      <span class="offerheading1"> OFFER & DEALS </span>
+      <a href="#"> <span class="offerheading2"> View More...&rarr; </span></a>
     </div>
 
-    <div id="offer-container">
-      <div class="offfer-heading">
-        <span class="offer-heading1">OFFERS & DEALS </span>
-        <span class="offer-heading2">View More...&rarr;</span>
-      </div>
+    <!-- ..............................slider.............................. -->
 
-      <div class="mainbox2">
-        <div class="offer-box">
-          <div class="offerBox1">
-            <img src="images/offer & deals/offer.jpg" alt="offer" />
-          </div>
-          <div class="offerBox2">
-            UPTO RS 100 OFF ON MIN CART VALUE OF RS 699 OR MORE . APPLICABLE ON
-            4TH ORDER ONWARDS FOR SIGNED IN USER.
-            <p class="valid">Valid to 31/12/23...&#128020;</p>
-          </div>
-        </div>
-        <div class="offer-box">
-          <div class="offerBox1">
-            <img src="images/offer & deals/hc.jpg" alt="hc" />
-          </div>
-          <div class="offerBox2">
-            ADD 2 PC HOT N CRISPY CHICKEN @ JUST RS 99 ON MIN CART VALUE OF RS
-            499 OR MORE. APPLICABLE ON 2ND & 3RD ORDER FOR SIGNED IN USER.
-            <p class="valid">Valid to 31/12/23...&#128020;</p>
+    <div class="container-fluid">
+      <div class="cardflip">
+        <div class="wrapper">
+          <div class="singlecard">
+            <div class="front">
+              <img src="images/offer & deals/Chickenzinger.jpg" alt="img" />
+            </div>
+
+            <div class="back">
+              <div class="content">
+                <h4>Valid to 31/12/23</h4>
+                <p>
+                  1 PC FREE CHICKEN ZINGER ON A CART VALUE OF 499 OR ABOVE ON
+                  FIRST ORDER. ONLY FOR REGISTERED USERS.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="offer-box">
-          <div class="offerBox1">
-            <img src="images/offer & deals/veg zinger.jpg" alt="veg zinger" />
-          </div>
-          <div class="offerBox2">
-            1 PC FREE VEG ZINGER ON A CART VALUE OF 499 OR ABOVE ON FIRST ORDER.
-            ONLY FOR REGISTERED USERS.
-            <p class="valid">Valid to 31/12/23...&#128020;</p>
+      </div>
+      <div class="cardflip">
+        <div class="wrapper">
+          <div class="singlecard">
+            <div class="front">
+              <img src="images/offer & deals/Vegzinger.jpg" alt="img" />
+            </div>
+
+            <div class="back">
+              <div class="content">
+                <h4>Valid to 31/12/23</h4>
+                <p>
+                  1 PC FREE VEG ZINGER ON A CART VALUE OF 499 OR ABOVE ON FIRST
+                  ORDER. ONLY FOR REGISTERED USERS.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="offer-box">
-          <div class="offerBox1">
-            <img src="images/offer & deals/zinger.jpg" alt="zinger" />
+      </div>
+      <div class="cardflip">
+        <div class="wrapper">
+          <div class="singlecard">
+            <div class="front">
+              <img src="images/offer & deals/fries.jpg" alt="img" />
+            </div>
+
+            <div class="back">
+              <div class="content">
+                <h4>Valid to 31/12/23</h4>
+                <p>
+                  1 LARGE  FREE FRIES ON A CART VALUE OF 499 OR ABOVE ON FIRST
+                  ORDER. ONLY FOR REGISTERED USERS.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="offerBox2">
-            1 PC FREE CHICKEN ZINGER ON A CART VALUE OF 499 OR ABOVE ON FIRST
-            ORDER. ONLY FOR REGISTERED USERS.
-            <p class="valid">Valid to 31/12/23...&#128020;</p>
+        </div>
+      </div>
+      <div class="cardflip">
+        <div class="wrapper">
+          <div class="singlecard">
+            <div class="front">
+              <img src="images/offer & deals/popcorn.jpg" alt="img" />
+            </div>
+
+            <div class="back">
+              <div class="content">
+                <h4>Valid to 31/12/23</h4>
+                <p>
+                  1 LARGE FREE POPCORN CHICKEN ON A CART VALUE OF 499 OR ABOVE
+                  ON FIRST ORDER. ONLY FOR REGISTERED USERS.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <footer>
-      <div class="footer-container">
-        <div class="footer">
-          <div class="footer-logo">
-            <img src="images/icons and logo/KFC-logo.png" alt="footer-logo" />
-          </div>
-          <div class="KFC-Food">
-            <h3>KFC Food</h3>
-            <ul class="kfcfood-list">
-              <li class="kfcfood-items"><a href="#">Menu </a></li>
-              <li class="kfcfood-items"><a href="#">Order Lookup</a></li>
-              <li class="kfcfood-items"><a href="#">Gift Card</a></li>
-              <li class="kfcfood-items">
-                <a href="#">Nutrition & Allergen</a>
-              </li>
-            </ul>
-          </div>
-          <div class="Support">
-            <h3>Support</h3>
-            <ul class="support-list">
-              <li class="support-items"><a href="#">Get Help</a></li>
-              <li class="support-items"><a href="#">Contact Us</a></li>
-              <li class="support-items"><a href="#">KFC Feedback</a></li>
-              <li class="support-items"><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
-          <div class="Legal">
-            <h3>Legal</h3>
-            <ul class="legal-list">
-              <li class="legal-items"><a href="#">Terms and Condition</a></li>
-              <li class="legal-items"><a href="#">Disclaimer</a></li>
-              <li class="legal-items"><a href="#">Caution Notice</a></li>
-            </ul>
-          </div>
-          <div class="KFC-India">
-            <h3>KFC India</h3>
-            <ul class="kfc-india-list">
-              <li class="kfc-india-items"><a href="#">About KFC</a></li>
-              <li class="kfc-india-items"><a href="#">KFC Care</a></li>
-              <li class="kfc-india-items"><a href="#">Careers</a></li>
-              <li class="kfc-india-items"><a href="#">Our Golden Past</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="applink">
-          <div class="playstore">
-            <a href="https://play.google.com/store/apps/details?id=com.yum.kfc"
-              ><img src="images/footer images/google.png" alt="playstore"
-            /></a>
-          </div>
-          <div class="appstore">
-            <a href="https://apps.apple.com/in/app/kfc-india/id915824379"
-              ><img src="images/footer images/apple.png" alt="appstore"
-            /></a>
-          </div>
-
-          <div class="fb">
-            <a href="#"><img src="images/footer images/fb.gif" /></a>
-          </div>
-          <div class="insta">
-            <a href="#"><img src="images/footer images/insta.gif" /></a>
-          </div>
-
-          <div class="twitter">
-            <a href="#"><img src="images/footer images/twitter.gif" /></a>
-          </div>
-        </div>
-
-        <div class="copyrights">
-          Copyright &#169; KFC Corporation 2023 All Rights Reserved
-        </div>
+  
+<!-- ............................footer............................................... -->
+  
+<footer>
+  <div class="footer-container">
+    <div class="footer">
+      <div class="footer-logo">
+        <img src="images/icons and logo/KFC-logo.png" alt="footer-logo" />
       </div>
-    </footer>
+      <div class="KFC-Food">
+        <h3 class="footerheading">KFC Food</h3>
+        <ul class="kfcfood-list">
+          <li class="kfcfood-items"><a href="#">Menu </a></li>
+          <li class="kfcfood-items"><a href="#">Order Lookup</a></li>
+          <li class="kfcfood-items"><a href="#">Gift Card</a></li>
+          <li class="kfcfood-items">
+            <a href="#">Nutrition & Allergen</a>
+          </li>
+        </ul>
+      </div>
+      <div class="Support">
+        <h3 class="footerheading">Support</h3>
+        <ul class="support-list">
+          <li class="support-items"><a href="#">Get Help</a></li>
+          <li class="support-items"><a href="#">Contact Us</a></li>
+          <li class="support-items"><a href="#">KFC Feedback</a></li>
+          <li class="support-items"><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="Legal">
+        <h3 class="footerheading">Legal</h3>
+        <ul class="legal-list">
+          <li class="legal-items"><a href="#">Terms and Condition</a></li>
+          <li class="legal-items"><a href="#">Disclaimer</a></li>
+          <li class="legal-items"><a href="#">Caution Notice</a></li>
+        </ul>
+      </div>
+      <div class="KFC-India">
+        <h3 class="footerheading">KFC India</h3>
+        <ul class="kfc-india-list">
+          <li class="kfc-india-items"><a href="#">About KFC</a></li>
+          <li class="kfc-india-items"><a href="#">KFC Care</a></li>
+          <li class="kfc-india-items"><a href="#">Careers</a></li>
+          <li class="kfc-india-items"><a href="#">Our Golden Past</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="applink">
+      <div class="playstore">
+        <a href="https://play.google.com/store/apps/details?id=com.yum.kfc"
+          ><img src="images/footer images/google.png" alt="playstore"
+        /></a>
+      </div>
+      <div class="appstore">
+        <a href="https://apps.apple.com/in/app/kfc-india/id915824379"
+          ><img src="images/footer images/apple.png" alt="appstore"
+        /></a>
+      </div>
+
+      <div class="fb">
+        <a href="#"><img src="images/footer images/fb.gif" /></a>
+      </div>
+      <div class="insta">
+        <a href="#"><img src="images/footer images/insta.gif" /></a>
+      </div>
+
+      <div class="twitter">
+        <a href="#"><img src="images/footer images/twitter.gif" /></a>
+      </div>
+    </div>
+
+    <div class="copyrights">
+      Copyright &#169; KFC Corporation 2023 All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+
+
+ <!--!*Scripts-->
+ <script src="javascript.js"></script>
+
+
   </body>
 </html>
