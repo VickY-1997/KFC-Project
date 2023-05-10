@@ -1,11 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+
 /* ..............................nav section.............................. */
 
 .sticky {
   background: #fff;
   border: 1px solid black;
 }
-
-
 
 .navbar-brand img {
   height: 60px;
@@ -39,7 +39,6 @@ span.navbar-toggler-icon {
   background-color: #b3112c;
 }
 
-
 .imgsignup,
 .imglogin {
   padding-right: 10px;
@@ -49,48 +48,71 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-
-
 /* .............dark mode............ */
 
 body {
-  
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
-  
 }
 
 .dark-mode {
   background-color: black;
   color: white;
 }
-.darkmode {
-  margin-left: 80px;
+.darkmodebtn {
+  margin-left: 30px;
   height: 35px;
   background: #b3112c;
   color: #fff;
   border: none;
   border-radius: 8px;
-  
 }
-.darkmode:hover {
+.darkmodebtn:hover {
   background-color: #a19c9c;
   color: #2e2c2d;
 }
 
+/* ................................weather.................... */
 
-
-
-
-
-
-
-
-
-
-
+.weatherinfo {
+  height: 68px;
+  /* border: 2px solid blue; */
+  margin-top: 25px;
+  display: inline-block;
+  margin-left: 400px;
+}
+.weatherbtn {
+  height: 30px;
+  background: #b3112c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+p#weather {
+  font-family: "Hina Mincho", serif;
+  font-size: 20px;
+}
+.headingweather {
+  height: 110px;
+  /* border: 2px solid green; */
+  display: inline-block;
+  
+}
 
 /* ..................................browse category........................... */
+
+.browseHead {
+  margin-left: 100px;
+}
+
+.browse-heading {
+  margin: 30px;
+  font-weight: bold;
+  float: left;
+  
+}
+
 .browse-caption {
   display: flex;
   justify-content: center;
@@ -99,6 +121,7 @@ body {
   margin: 15px;
   color: #b3112c;
   font-family: "Trade Winds", cursive;
+
 }
 a:link {
   text-decoration: none;
@@ -112,16 +135,6 @@ a:link {
   transform: scale(1.1);
   border-radius: 10px;
 }
-.browse-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
-  font-weight: bold;
- 
-}
-
-
 
 /* ...................................wednesday offers............................ */
 
@@ -224,7 +237,7 @@ a:link {
 #t-9:checked ~ .testimonials label[for="t-1"] {
   transform: translate3d(290px, 0, -130px) rotateY(-60deg);
   z-index: 3;
-} 
+}
 
 #t-2:checked ~ .testimonials label[for="t-1"],
 #t-3:checked ~ .testimonials label[for="t-2"],
@@ -262,11 +275,11 @@ a:link {
 #t-9:checked ~ .testimonials label[for="t-9"] {
   z-index: 4;
 }
- .wed-img img {
+.wed-img img {
   height: 215px;
   width: 100%;
   margin-bottom: 10px;
-} 
+}
 .wed-caption {
   color: whitesmoke;
   font-size: 15px;
@@ -276,48 +289,41 @@ a:link {
   font-family: "Cinzel Decorative", cursive;
 }
 .wednesday-heading {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 30px;
-	font-weight: bold;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  font-weight: bold;
+}
 
-  /* ................................offers and deals................................. */
+/* ................................offers and deals................................. */
 
 /* body {
   
   background-color: #2e2c2d;
 } */
 
-
-
 .offerheadig {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .offerheading1 {
   font-size: 40px;
   font-weight: 500;
-
 }
-.offerheading2{
-font-size: 25px;
-
+.offerheading2 {
+  font-size: 25px;
 }
 
 .offercard {
   height: 350px;
   width: 250px;
   float: left;
-  border: 1px solid  black;
+  border: 1px solid black;
   margin-left: 25px;
   background: #d6cbcd;
   margin-top: 20px;
-  
-
 }
 
 .offercard img {
@@ -326,19 +332,13 @@ font-size: 25px;
 }
 .offercard-caption {
   font-size: 15px;
-  
-  
 }
 
-
-
 .cardflip {
-  
-  height:300px;
+  height: 300px;
   display: flex;
   float: left;
   margin-left: 30px;
-
 }
 .wrapper,
 .singlecard {
@@ -352,8 +352,8 @@ font-size: 25px;
 }
 .singlecard {
   text-align: center;
-  transition: all 1.5s cubic-bezier(0.7, -.5, 0.3, 1.8);
-  transform-style:preserve-3d ;
+  transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+  transform-style: preserve-3d;
 }
 .wrapper:hover .singlecard {
   transform: rotateY(180deg);
@@ -361,13 +361,11 @@ font-size: 25px;
 
 .front,
 .back {
-  
   width: 300px;
   position: relative;
   top: 0;
   left: 0;
   backface-visibility: hidden;
- 
 }
 .front {
   cursor: pointer;
@@ -385,14 +383,14 @@ font-size: 25px;
   border-radius: 50px;
   height: 250px;
   background: #a19c9c;
-  background:  #d5191b;
+  background: #d5191b;
   color: white;
 }
 h4 {
   padding-top: 60px;
 }
 
-.front img  {
+.front img {
   height: 250px;
   width: 300px;
   /* border: 3px solid black; */
@@ -401,9 +399,10 @@ h4 {
 /* ...................footer side................. */
 
 .footer-container {
-margin-top: 300px;
+  margin-top: 300px;
   height: 320px;
   border: 3px solid rgb(15, 15, 15);
+  background-color: #b2b6b3;
 }
 
 .footer {
@@ -421,7 +420,6 @@ margin-top: 300px;
   height: 90px;
   width: 160px;
   padding-top: 30px;
-  
 }
 .footerheading {
   padding-left: 15px;
@@ -501,6 +499,12 @@ a:hover {
   padding-right: 10px;
 }
 
+div.fb,
+div.insta,
+div.twitter {
+  padding-left: 20px;
+}
+
 .copyrights {
   height: 20px;
   width: 100%;
@@ -509,10 +513,7 @@ a:hover {
   justify-content: center;
 }
 
-
-
 /* ...........................coupon code............... */
-
 
 #coupon {
   position: absolute;
@@ -523,8 +524,6 @@ a:hover {
   height: 340vh;
   padding-top: 135px;
   backdrop-filter: blur(10px);
-
-
 }
 
 .couponcode {
@@ -541,7 +540,6 @@ a:hover {
 
 #PopupImage {
   width: 100%;
-
 }
 
 #popupClose {
@@ -553,7 +551,3 @@ a:hover {
   cursor: pointer;
   border-radius: 5px;
 }
-
-
-  
-
