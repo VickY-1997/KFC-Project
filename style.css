@@ -50,36 +50,28 @@ body::-webkit-scrollbar {
 
 /* .............dark mode............ */
 
-body {
-  background-color: whitesmoke;
-  color: black;
-}
-
-.dark-mode {
+.darkmode {
   background-color: black;
   color: white;
 }
-.darkmodebtn {
-  margin-left: 30px;
-  height: 35px;
-  background: #b3112c;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
+img#lightdark {
+  height: 50px;
+  background-color: #fff;
 }
-.darkmodebtn:hover {
-  background-color: #a19c9c;
-  color: #2e2c2d;
+.darkmodebtn {
+  background-color: #fff;
+  border: none;
+  margin-left: 95px;
 }
 
 /* ................................weather.................... */
 
 .weatherinfo {
-  height: 68px;
+  height: 100px;
   /* border: 2px solid blue; */
-  margin-top: 25px;
+  margin-top: 15px;
   display: inline-block;
-  margin-left: 400px;
+  margin-left: 250px;
 }
 .weatherbtn {
   height: 30px;
@@ -93,12 +85,18 @@ body {
 p#weather {
   font-family: "Hina Mincho", serif;
   font-size: 20px;
+  margin-bottom: 0;
+  float: left;
 }
-.headingweather {
-  height: 110px;
+.browsheadingweather {
+  height: 125px;
   /* border: 2px solid green; */
   display: inline-block;
-  
+}
+img#wicon {
+  height: 70px;
+  margin-left: 5px;
+  margin-top: 2px;
 }
 
 /* ..................................browse category........................... */
@@ -111,7 +109,6 @@ p#weather {
   margin: 30px;
   font-weight: bold;
   float: left;
-  
 }
 
 .browse-caption {
@@ -122,7 +119,6 @@ p#weather {
   margin: 15px;
   color: #b3112c;
   font-family: "Trade Winds", cursive;
-
 }
 a:link {
   text-decoration: none;
@@ -403,7 +399,7 @@ h4 {
   margin-top: 300px;
   height: 320px;
   border: 3px solid rgb(15, 15, 15);
-  background-color: #b2b6b3;
+  background-color: #7b7c7b;
 }
 
 .footer {
