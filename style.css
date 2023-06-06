@@ -5,6 +5,8 @@
 .sticky {
   background: #fff;
   border: 1px solid black;
+  box-shadow: 0 8px 6px -6px black;
+  
 }
 
 .navbar-brand img {
@@ -22,8 +24,8 @@ a.nav-link {
   margin-left: 15px;
   font-weight: 640;
 }
-.nav-link:focus,
-.nav-link:hover {
+a.nav-link:focus,
+a.nav-link:hover {
   color: #b3112c;
 }
 a.dropdown-item {

@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Mate+SC&display=swap");
+
+/* ..............................nav section.............................. */
+body {
+  height: 2000px;
+}
+
+.sticky {
+  background: #fff;
+  box-shadow: inset 0 0 10px #6e6e6c;
+}
+
+.navbar-brand img {
+  height: 60px;
+  margin-left: 15px;
+}
+
+.nav-item img {
+  height: 25px;
+  padding-bottom: 5px;
+}
+a.nav-link {
+  color: black;
+  font-size: 18px;
+  margin-left: 15px;
+  font-weight: 640;
+}
+a.nav-link:focus,
+a.nav-link:hover {
+  color: #b3112c;
+}
+a.dropdown-item {
+  font-size: 15px;
+  --bs-dropdown-link-hover-bg: #b3112c;
+  --bs-dropdown-link-hover-color: #ffffff;
+  --bs-dropdown-link-active-bg: #3d3838;
+}
+.dropdown-menu {
+  --bs-dropdown-link-hover-bg: #b3112c;
+  --bs-dropdown-link-hover-color: #ffffff;
+  --bs-dropdown-link-active-bg: #3d3838;
+}
+span.navbar-toggler-icon {
+  background-color: #b3112c;
+}
+
+.imgsignup,
+.imglogin {
+  padding-right: 10px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+/* ..................menu items.............. */
+
+.listingpage {
+  /* border: 5px solid green; */
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+#L_menubox {
+  /* border: 2px solid green; */
+  float: left;
+}
+
+.kfcmenulist {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.menu1 {
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid green; */
+  margin-top: 10px;
+  color: #b3112c;
+  background-color: rgb(202, 226, 247);
+  box-shadow: 0 8px 6px -6px black;
+  width: 200px;
+  font-family: "Mate SC", serif;
+  font-weight: bold;
+}
+a:link {
+  text-decoration: none;
+}
+.menu1:hover {
+  transform: scale(1.1);
+  color: #000;
+  box-shadow: inset 0 0 10px #6e6e6c;
+}
+
+/* ....................item details..................... */
+
+#L_itemdetails {
+  height: 700px;
+  border: 5px solid rgb(36, 15, 129);
+  width: 80%;
+  display: block;
+  line-height: 300px;
+  
+  
+}
+.boxmeals {
+  border: 3px solid green;
+  height: 500px;
+  margin: 10px;
+}
+.boxmeals1 {
+  border: 1px solid black;
+  margin:10px;
+  width: 260px;
+  display: inline-block;
+  background-color: #6e6e6c;
+  height: 300px;
+  
+}
+.boxmealsImg > img {
+  height: 190px;
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  
+  
+}
+figcaption {
+  height: 100px;
+  border: 5px solid green;
+}
