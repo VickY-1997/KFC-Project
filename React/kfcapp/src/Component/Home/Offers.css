@@ -1,0 +1,95 @@
+.offerheadig {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .offerheading1 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .offerheading2 {
+    font-size: 25px;
+  }
+  
+  .offercard {
+    height: 350px;
+    width: 250px;
+    float: left;
+    border: 1px solid black;
+    margin-left: 25px;
+    background: #d6cbcd;
+    margin-top: 20px;
+    
+  }
+  
+  .offercard img {
+    height: 200px;
+    width: 100%;
+  }
+  .offercard-caption {
+    font-size: 15px;
+  }
+  
+  .cardflip {
+    height: 300px;
+    display: flex;
+    float: left;
+    margin-left: 30px;
+  }
+  .wrapper,
+  .singlecard {
+    width: 300px;
+    margin: auto;
+    position: relative;
+  }
+  
+  .wrapper {
+    perspective: 900px;
+  }
+  .singlecard {
+    text-align: center;
+    transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+    transform-style: preserve-3d;
+  }
+  .wrapper:hover .singlecard {
+    transform: rotateY(180deg);
+  }
+  
+  .front,
+  .back {
+    width: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+  }
+  .front {
+    cursor: pointer;
+    height: 250px;
+    width: 200px;
+    background-color: #c92228;
+    backface-visibility: hidden;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center center;
+    
+  }
+  .back {
+    transform: rotateY(180deg);
+    position: absolute;
+    border-radius: 50px;
+    height: 250px;
+    background: #a19c9c;
+    background: #d5191b;
+    color: white;
+  }
+  h4 {
+    padding-top: 60px;
+  }
+  
+  .front img {
+    height: 250px;
+    width: 300px;
+    /* border: 3px solid black; */
+  }
+  

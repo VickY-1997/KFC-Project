@@ -105,14 +105,23 @@ img#wicon {
 
 .browseHead {
   margin-left: 100px;
+  
 }
 
 .browse-heading {
   margin: 30px;
   font-weight: bold;
   float: left;
+  
 }
 
+.browContainer{
+  height: 570px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: inset 0 0 10px #6e6e6c;
+  margin-bottom: 20px;
+  
+}
 .browse-caption {
   display: flex;
   justify-content: center;
@@ -128,184 +137,68 @@ a:link {
 .browse-img img {
   height: 190px;
   width: 95%;
+  margin-top: 30px;
 }
 
 .browse-img img:hover {
   transform: scale(1.1);
   border-radius: 10px;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 /* ...................................wednesday offers............................ */
 
-.slider input {
-  display: none;
-}
-.testimonials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  min-height: 290px;
-  perspective: 1000px;
-  overflow: hidden;
-}
-.testimonials .item {
-  height: 270px;
-  width: 320px;
-  padding: 0px;
-  border-radius: 5px;
-  background-color: #c92228;
-  position: absolute;
-  border: 3px solid rgb(5, 5, 5);
-  top: 0;
-  box-sizing: border-box;
-  text-align: center;
-  transition: transform 0.4s;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  user-select: none;
-  cursor: pointer;
-}
-.dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.dots label {
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: black;
-  margin: 7px;
-  transition-duration: 0.2s;
-}
-#t-1:checked ~ .dots label[for="t-1"],
-#t-2:checked ~ .dots label[for="t-2"],
-#t-3:checked ~ .dots label[for="t-3"],
-#t-4:checked ~ .dots label[for="t-4"],
-#t-5:checked ~ .dots label[for="t-5"],
-#t-6:checked ~ .dots label[for="t-6"],
-#t-7:checked ~ .dots label[for="t-7"],
-#t-8:checked ~ .dots label[for="t-8"],
-#t-9:checked ~ .dots label[for="t-9"] {
-  transform: scale(2);
-  background-color: #c92228;
-  box-shadow: 0px 0px 0px 2px rgb(214, 200, 200);
-}
 
-#t-1:checked ~ .dots label[for="t-2"],
-#t-2:checked ~ .dots label[for="t-1"],
-#t-2:checked ~ .dots label[for="t-3"],
-#t-3:checked ~ .dots label[for="t-2"],
-#t-3:checked ~ .dots label[for="t-4"],
-#t-4:checked ~ .dots label[for="t-3"],
-#t-4:checked ~ .dots label[for="t-5"],
-#t-5:checked ~ .dots label[for="t-4"],
-#t-5:checked ~ .dots label[for="t-6"],
-#t-6:checked ~ .dots label[for="t-5"],
-#t-6:checked ~ .dots label[for="t-7"],
-#t-7:checked ~ .dots label[for="t-6"],
-#t-7:checked ~ .dots label[for="t-8"],
-#t-8:checked ~ .dots label[for="t-7"],
-#t-8:checked ~ .dots label[for="t-9"],
-#t-9:checked ~ .dots label[for="t-1"] {
-  transform: scale(1.5);
-}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 
-#t-1:checked ~ .testimonials label[for="t-3"],
-#t-2:checked ~ .testimonials label[for="t-4"],
-#t-3:checked ~ .testimonials label[for="t-5"],
-#t-4:checked ~ .testimonials label[for="t-6"],
-#t-5:checked ~ .testimonials label[for="t-7"],
-#t-6:checked ~ .testimonials label[for="t-8"],
-#t-7:checked ~ .testimonials label[for="t-9"],
-#t-8:checked ~ .testimonials label[for="t-1"],
-#t-9:checked ~ .testimonials label[for="t-2"] {
-  transform: translate3d(560px, 0, -200px) rotateY(-75deg);
-  z-index: 2;
-}
-
-#t-1:checked ~ .testimonials label[for="t-2"],
-#t-2:checked ~ .testimonials label[for="t-3"],
-#t-3:checked ~ .testimonials label[for="t-4"],
-#t-4:checked ~ .testimonials label[for="t-5"],
-#t-5:checked ~ .testimonials label[for="t-6"],
-#t-6:checked ~ .testimonials label[for="t-7"],
-#t-7:checked ~ .testimonials label[for="t-8"],
-#t-8:checked ~ .testimonials label[for="t-9"],
-#t-9:checked ~ .testimonials label[for="t-1"] {
-  transform: translate3d(290px, 0, -130px) rotateY(-60deg);
-  z-index: 3;
-}
-
-#t-2:checked ~ .testimonials label[for="t-1"],
-#t-3:checked ~ .testimonials label[for="t-2"],
-#t-4:checked ~ .testimonials label[for="t-3"],
-#t-5:checked ~ .testimonials label[for="t-4"],
-#t-6:checked ~ .testimonials label[for="t-5"],
-#t-7:checked ~ .testimonials label[for="t-6"],
-#t-8:checked ~ .testimonials label[for="t-7"],
-#t-9:checked ~ .testimonials label[for="t-8"],
-#t-1:checked ~ .testimonials label[for="t-9"] {
-  transform: translate3d(-290px, 0, -130px) rotateY(60deg);
-  z-index: 3;
-}
-
-#t-3:checked ~ .testimonials label[for="t-1"],
-#t-4:checked ~ .testimonials label[for="t-2"],
-#t-5:checked ~ .testimonials label[for="t-3"],
-#t-6:checked ~ .testimonials label[for="t-4"],
-#t-7:checked ~ .testimonials label[for="t-5"],
-#t-8:checked ~ .testimonials label[for="t-6"],
-#t-9:checked ~ .testimonials label[for="t-7"],
-#t-1:checked ~ .testimonials label[for="t-8"],
-#t-2:checked ~ .testimonials label[for="t-9"] {
-  transform: translate3d(-560px, 0, -200px) rotateY(75deg);
-}
-
-#t-1:checked ~ .testimonials label[for="t-1"],
-#t-2:checked ~ .testimonials label[for="t-2"],
-#t-3:checked ~ .testimonials label[for="t-3"],
-#t-4:checked ~ .testimonials label[for="t-4"],
-#t-5:checked ~ .testimonials label[for="t-5"],
-#t-6:checked ~ .testimonials label[for="t-6"],
-#t-7:checked ~ .testimonials label[for="t-7"],
-#t-8:checked ~ .testimonials label[for="t-8"],
-#t-9:checked ~ .testimonials label[for="t-9"] {
-  z-index: 4;
-}
-.wed-img img {
-  height: 215px;
-  width: 100%;
-  margin-bottom: 10px;
-}
-.wed-caption {
-  color: whitesmoke;
-  font-size: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Cinzel Decorative", cursive;
-}
-.wednesday-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
+.wedHeading {
+  height: 70px;
+  /* border: 1px solid green; */
+  font-size: 30px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wedcontainer {
+  height: 990px;
+  /* border: 2px solid green; */
+  margin-top: 5px;
+  box-shadow: rgba(26, 17, 17, 0.589) 0px 3px 8px;
+  margin-bottom: 20px;
+  
+  
+}
+.wedofferslist > img{
+      height: 260px;
+      width: 330px;
+      margin-top: 15px;
+      margin-left: 10px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      
+}
+.wedcap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 15px;
+  
 }
 
 /* ................................offers and deals................................. */
 
-/* body {
-  
-  background-color: #2e2c2d;
-} */
+
 
 .offerheadig {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 .offerheading1 {
   font-size: 40px;

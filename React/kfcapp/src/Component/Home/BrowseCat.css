@@ -1,0 +1,34 @@
+.browseHead {
+    margin-left: 100px;
+}
+
+.browse-heading {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-weight: bold;
+    /* float: left; */
+}
+
+.browse-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 15px;
+    color: #b3112c;
+    font-family: "Trade Winds", cursive;
+}
+a:link {
+    text-decoration: none;
+}
+.browse-img img {
+    height: 190px;
+    width: 95%;
+}
+
+.browse-img img:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+    box-shadow: 0 8px 6px -6px black;
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+.wedHeading {
+  height: 70px;
+  /* border: 1px solid green; */
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wedcontainer {
+  height: 990px;
+  /* border: 2px solid green; */
+  margin-top: 5px;
+  box-shadow: rgba(26, 17, 17, 0.589) 0px 3px 8px;
+  margin-bottom: 20px;
+  
+  
+}
+.wedofferslist > img{
+      height: 260px;
+      width: 330px;
+      margin-top: 15px;
+      margin-left: 10px;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      
+}
+.wedcap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 15px;
+  color: #b3112c;;
+}

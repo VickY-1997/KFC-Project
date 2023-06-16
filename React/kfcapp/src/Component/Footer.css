@@ -1,0 +1,114 @@
+.footer-container {
+    margin-top: 300px;
+    height: 320px;
+    border: 3px solid rgb(15, 15, 15);
+    background-color: #7b7c7b;
+  }
+  
+  .footer {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  .footer-logo {
+    height: 210px;
+    width: 100px;
+  }
+  .footer-logo img {
+    height: 90px;
+    width: 160px;
+    padding-top: 30px;
+  }
+  .footerheading {
+    padding-left: 15px;
+  }
+  .KFC-Food {
+    height: 165px;
+    width: 160px;
+    padding-top: 30px;
+    list-style-type: none;
+    padding-left: 20px;
+    line-height: 27px;
+  }
+  
+  .kfcfood-list {
+    list-style-type: none;
+  }
+  .kfcfood-items {
+    text-decoration: none;
+  }
+  .Support {
+    height: 165px;
+    width: 160px;
+    padding-top: 30px;
+    line-height: 27px;
+  }
+  .support-list {
+    list-style-type: none;
+  }
+  
+  .Legal {
+    height: 165px;
+    width: 160px;
+    padding-top: 30px;
+    line-height: 27px;
+  }
+  .legal-list {
+    list-style-type: none;
+  }
+  .KFC-India {
+    height: 165px;
+    width: 160px;
+    padding-top: 30px;
+    line-height: 27px;
+  }
+  .kfc-india-list {
+    list-style-type: none;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(179 17 44);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  .applink {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .playstore img {
+    height: 160px;
+    width: 150px;
+  }
+  .appstore img {
+    height: 57px;
+    width: 160px;
+    padding-right: 10px;
+  }
+  
+  div.fb,
+  div.insta,
+  div.twitter {
+    padding-left: 20px;
+  }
+  
+  .copyrights {
+    height: 20px;
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
