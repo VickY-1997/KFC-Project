@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Routing from './Component/Routing';
+import Routing from './components/Routing';
 const container = document.getElementById('root');
-const root = ReactDOM.createRoot(container)
-root.render(<Routing/>)
- 
+const Root = ReactDOM.createRoot(container);
+Root.render(<Routing/>)

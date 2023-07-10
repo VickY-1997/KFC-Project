@@ -1,18 +1,17 @@
 import React from 'react';
 import Slider from './Slider';
-import BrowseCat from './BrowseCat';
-import Wednesday from './Wednesday';
+import QuickSearch from './QuickSearch';
+import WedOffer from './WedOffer';
 import Offers from './Offers';
-
 
 const Home = () => {
     return(
         <>
-        
         <Slider/>
-        <BrowseCat/>
-        <Wednesday/>
+        <QuickSearch/>
+        <WedOffer/>
         <Offers/>
+        
         </>
     )
 }

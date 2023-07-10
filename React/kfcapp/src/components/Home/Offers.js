@@ -90,7 +90,6 @@ const Offers = () => {
         </div>
       </div>
     </div>
-
         
         </>
     )

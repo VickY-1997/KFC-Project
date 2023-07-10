@@ -2,10 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
   .offerheading1 {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 500;
   }
   .offerheading2 {
     font-size: 25px;
@@ -19,7 +20,6 @@
     margin-left: 25px;
     background: #d6cbcd;
     margin-top: 20px;
-    
   }
   
   .offercard img {
@@ -72,7 +72,6 @@
     border-radius: 50px;
     background-size: cover;
     background-position: center center;
-    
   }
   .back {
     transform: rotateY(180deg);

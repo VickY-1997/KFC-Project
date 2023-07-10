@@ -1,29 +1,27 @@
 import React from 'react';
 import './Header.css'
+import {Link} from 'react-router-dom';
 
 const Header = () => {
     return(
         <>
         
-        <nav className="navbar navbar-expand-sm navbar-dark sticky-top sticky">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#"
-          ><img src="https://i.ibb.co/Nxm1Twv/KFC-logo.png" alt="logo"
-        /></a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavbar"
-        >
+            <nav className="navbar navbar-expand-sm navbar-dark sticky-top sticky">
+        <div className="container-fluid">
+            <a className="navbar-brand" href="#">
+              <img src="https://i.ibb.co/Nxm1Twv/KFC-logo.png" alt="logo"/></a>
+            <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+            >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="collapsibleNavbar">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#"
-                ><img src="https://i.ibb.co/5nVwtqF/home.gif" alt="home" /> HOME</a
-              >
+            <Link className="nav-link" to="/">HOME</Link>
             </li>
             <li className="nav-item dropdown">
               <a
@@ -66,7 +64,6 @@ const Header = () => {
               >
             </li>
           </ul>
-          
           <ul className="navbar-nav ms-auto">
             <li className="nav-item signup">
               <a className="nav-link" href="#">
@@ -91,6 +88,7 @@ const Header = () => {
         </div>
       </div>
     </nav>
+
 
         </>
     )
