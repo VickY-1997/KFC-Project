@@ -13,16 +13,18 @@ const ListingDisplay = (props) => {
                         return(
                             <div className="item" key={item._id}>
                                 <div className="row">
-                                    <div className="col-md-5">
-                                        <img src={item.item_image} alt={item.item_name} className="Image"/>
+                                    <div className="col-md-5 itemImg">
+                                        <img src={item.item_image} alt={item.item_name}/>
                                     </div>
-                                    <div className="col-md-7">
-                                        <div className="hotel_name">
-                                            <Link to={'/'}>
+                                    <div className="col-md-7 itemDetails">
+                                        <div className="itemsName">
+                                            <Link to={`/details?restId=${item.item_id}`}>
                                                 {item.item_name}
                                             </Link>
                                         </div>
-                                        <div className="city_name">{item.item_price}</div>
+                                        <div className="description">{item.description}</div>
+                                        <div className="itemTypes">{item.item_type}</div>
+                                        <div className="itemPrice">Rs.{item.item_price}</div>
                                     </div>
                                 </div>
                             </div>
@@ -37,10 +39,10 @@ const ListingDisplay = (props) => {
         
             }else{
                 return(
-                    <div>
-                        <h2>Loading</h2>
-                        <img src="https://i.gifer.com/XOsX.gif" alt="loader"/>
-                    </div>
+                        <center>
+                            <h2>Loading</h2>
+                            <img src="https://i.gifer.com/XOsX.gif" alt="loader"/>
+                        </center>
                 )
             }
         }

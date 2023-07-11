@@ -23,15 +23,31 @@ const Listing = () => {
     return(
 
         <>
-            <div className="row">
-                <div id="mainListing">
-                    <div id="filter">
+        
 
-                    </div>
-                    <ListingDisplay listData={restList}/>
+            <div class="container-fluid listingpage" >
+                <div id="L_menubox"><span class="kfcmenulist"> KFC MENU</span>
+                    <a href="http://localhost:3000/listing/1"><div class="menu1">BOX MEALS</div></a>
+                    <a href="http://localhost:3000/listing/2"><div class="menu1">BRIYANI BUCKETS</div></a>
+                    <a href="#"><div class="menu1">BURGER</div></a>
+                    <a href="#"><div class="menu1">CHICKEN BUCKETS</div></a>
+                    <a href="#"><div class="menu1">HOT LAUNCHES</div></a>
+                    <a href="#"><div class="menu1">CHICKEN ROLLS</div></a>
+                    <a href="#snack"><div class="menu1">SNACKS</div></a>
+                    <a href="#"><div class="menu1">PERI PERI</div></a>
+                    <a href="#"><div class="menu1">BEVERAGES</div></a>
                 </div>
-            </div>
-           
+                        <div className='menulistItems'>
+                               <ListingDisplay listData={restList}/>
+                        </div>
+                         
+             </div>
+
+
+
+
+
+            
         </>
 
     )

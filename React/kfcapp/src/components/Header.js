@@ -21,7 +21,7 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="collapsibleNavbar">
           <ul className="navbar-nav">
             <li className="nav-item">
-            <Link className="nav-link" to="/">HOME</Link>
+            <Link className="nav-link" to="/"><img src="https://i.ibb.co/5nVwtqF/home.gif" alt="home"/> HOME</Link>
             </li>
             <li className="nav-item dropdown">
               <a
@@ -29,7 +29,7 @@ const Header = () => {
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                ><img src="https://i.ibb.co/f84yv7D/menu.gif" alt="menu" /> MENU</a
+                ><img src="https://i.ibb.co/f84yv7D/menu.gif" alt="menu"/> MENU</a
               >
               <ul className="dropdown-menu">
                 <li>

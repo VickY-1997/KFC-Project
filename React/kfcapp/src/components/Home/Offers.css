@@ -12,6 +12,11 @@
     font-size: 25px;
   }
   
+.offercontainerBox{
+  /* border: 1px solid green; */
+  height: 315px;
+}
+
   .offercard {
     height: 350px;
     width: 250px;

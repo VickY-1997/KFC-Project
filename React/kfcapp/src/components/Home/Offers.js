@@ -12,7 +12,7 @@ const Offers = () => {
 
     
 
-    <div className="container-fluid">
+    <div className="container-fluid offercontainerBox">
       <div className="cardflip">
         <div className="wrapper">
           <div className="singlecard">

@@ -45,3 +45,7 @@
   body::-webkit-scrollbar {
     display: none;
   }
+ 
+.navbar-nav .nav-link.show {
+  color: #b3112c;
+}
