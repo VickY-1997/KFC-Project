@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&family=Mate+SC&display=swap');
+
+
+
+.orderContainer {
+    height: 400px;
+    /* border: 1px solid green; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.orderBox{
+    height: 350px;
+    /* border: 2px solid blue; */
+    width: 80%;
+    margin-left: 11%;
+    
+    
+    
+}
+.orderHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    font-family: 'Mate SC', serif;
+    font-size: 35px;
+    color: #b3112c;
+    font-weight: 500px
+}
+.formGroup{
+    line-height: 2;
+    color: #b3112c;
+}
+.orderPrice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    font-family: 'Josefin Slab', serif;
+    color: #b3112c;
+}
+.submitBtm{
+  margin-left: 43%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  background-color: #b3112c;
+  color: #fff;
+  height: 38px;
+  width: 100px;
+  border-radius: 7px;
+  border: none;
+  font-family: 'Mate SC', serif;
+  font-size: 20px;
+  
+}

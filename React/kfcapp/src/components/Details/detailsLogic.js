@@ -47,11 +47,11 @@ const DetailDisplay =  () => {
                                 <div className="description_d">{restDetails.description}</div>
                                 <div className="itemTypes_d">{restDetails.item_type}</div>
                                 <div className="itemPrice_d">Rs.{restDetails.item_price}</div>
-                            <hr/>
-                            <div className='col-md-12'>
-                                <Link className="btn btn-danger"
+                           
+                            <div className='placeorderBtn'>
+                                <Link className="backBtn"
                                 to={`/listing/${mealId}`}>Back</Link>
-                                <button className='btn btn-success'
+                                <button className='proceedBtn'
                                 onClick={proceed}>Procced</button>
                             </div>
 
