@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Merienda:wght@300&family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+
 
 
 
@@ -45,20 +49,21 @@
   font-size: 20px;
   font-family: 'Merienda', cursive;
   
+  
 }
 .itemTypes{
-  margin-top: 15px;
-  font-size: 22px;
-  font-weight: bold;
-  font-family: 'Metal Mania', cursive;
+  margin-top: 12px;
+  font-size: 42px;
+  font-family: 'Tangerine', cursive;
   
 }
 
 .itemPrice{
-  margin-top: 15px;
+  margin-top: 5px;
   color: #b3112c;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: bold;
+  font-family: 'Kalam', cursive;
 }
 
 

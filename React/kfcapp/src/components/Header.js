@@ -66,23 +66,17 @@ const Header = () => {
           </ul>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item signup">
-              <a className="nav-link" href="#">
-                <img
-                  src="https://i.ibb.co/fN8JyKL/signup.gif"
-                  alt="signup"
-                  className="imgsignup"
-                />SIGNUP
-              </a>
+             <Link to="register" className="nav-link">
+                <img src="https://i.ibb.co/fN8JyKL/signup.gif" alt="signup" className="imgsignup"/>
+                SIGNUP
+             </Link>
             </li>
 
             <li className="nav-item login">
-              <a className="nav-link" href="#">
-                <img
-                  src="https://i.ibb.co/jkQhDBf/login.gif"
-                  alt="login"
-                  className="imglogin"
-                />LOGIN
-              </a>
+             <Link to="login" className="nav-link"> 
+                <img src="https://i.ibb.co/jkQhDBf/login.gif" alt="login" className="imglogin"/>
+                LOGIN
+             </Link>
             </li>
           </ul>
         </div>
