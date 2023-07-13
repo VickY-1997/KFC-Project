@@ -26,7 +26,7 @@ const Display = (props) => {
                 <thead>
                     <tr>
                         <th>OrderId</th>
-                        <th>Itemname</th>
+                        <th>Item-Name</th>
                         <th>Name</th>
                         <th>Email</th>
                         <th>Cost</th>

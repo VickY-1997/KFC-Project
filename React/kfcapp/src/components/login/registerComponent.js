@@ -47,11 +47,12 @@ const Register = () => {
             <Header/>
 
             <div className="container">
-                <hr/>
+               
                 <div className="panel panel-info">
                     <div className="panel-heading">
-                        <h3>Register</h3>
+                       <center> <h3>Register</h3> </center>
                     </div>
+                    <hr/>
                     <div className="panel-body">
                        
                         <div className="row">
@@ -77,7 +78,7 @@ const Register = () => {
                             </div>
                             
                         </div>
-                       
+                       <hr/>
                         <button className="btn btn-success" onClick={checkout}>
                                 Register
                         </button>
@@ -85,7 +86,7 @@ const Register = () => {
                     </div>
                 </div>
             </div>
-        
+            <hr/>
         </>
     )
 

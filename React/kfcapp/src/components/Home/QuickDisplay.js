@@ -21,8 +21,8 @@ const QuickDisplay = (props) => {
         }
         else{
             return(
-                <center>
-                    <h2>Loading</h2>
+                <center className='loading'>
+                    <h2>Loading...</h2>
                     <img src="https://i.gifer.com/XOsX.gif" alt="loader"/>
                 </center>
             )

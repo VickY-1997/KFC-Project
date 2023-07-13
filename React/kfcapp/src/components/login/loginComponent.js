@@ -45,11 +45,12 @@ const Login = () => {
             <Header/>
         
             <div className="container">
-                <hr/>
+               
                 <div className="panel panel-info">
                     <div className="panel-heading">
-                        <h3>Login</h3>
+                     <center><h3>Login</h3></center>
                     </div>
+                    <hr/>
                     <div className="panel-body">
                        
                         <div className="row">
@@ -67,7 +68,7 @@ const Login = () => {
                            
                             
                         </div>
-                       
+                       <hr/>
                         <button className="btn btn-danger" onClick={checkout}>
                                 Login
                         </button>
@@ -75,7 +76,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
-        
+            <hr/>
         </>
     )
 
